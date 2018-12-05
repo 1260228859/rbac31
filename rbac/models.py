@@ -20,6 +20,25 @@ class UserTypeModel(Enum):
             (UserTypeModel.CUSTOMER.value, "客户表")
         )
 
+
+class RecourseType(Enum):
+    """
+    资源权限
+    """
+    API = 1
+    MENU = 2
+    ICON = 3
+    FILE = 4
+
+    @classmethod
+    def choices(cls):
+        return (
+            (RecourseType.API.value, "接口资源"),
+            (RecourseType.MENU.value, "菜单资源"),
+            (RecourseType.ICON.value, "标签资源"),
+            (RecourseType.FILE.value, "文件资源")
+        )
+
 class User(AbstractUser):
     """
     User INFO
@@ -41,3 +60,20 @@ class Admin(User):
 class Customer(User):
     pass
 
+class Group(models.Model):
+    group_name = models.CharField(max_length=128, verbose_name='组名')
+
+class Role(models.Model):
+    name = models.CharField(max_length=128, verbose_name='角色名称')
+
+class Permission(models.Model):
+    resouce_type = models.IntegerField(choices=RecourseType.choices(), verbose_name='资源类型')
+
+class Menu(models.Model):
+    title = models.CharField(max_length=128, verbose_name='标题页')
+
+class Api(models.Model):
+    url = models.CharField(max_length=128, verbose_name='根路径')
+
+class Recourse(models.Model):
+    pass
