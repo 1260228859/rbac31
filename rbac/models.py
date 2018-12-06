@@ -2,6 +2,8 @@ from django.db import models
 from enum import Enum
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
+# todo: 代码调整语句模式 废弃穷举法(url拼接)采用分层过滤具体需要研究下淘宝的实现原理i
+# todo： 将url转换为类名或者model名称   以url为组判断
 # TODO: 在代码级别再次封装request.user
 
 class UserTypeModel(Enum):
@@ -65,8 +67,9 @@ class Group(models.Model):
 
 class Role(models.Model):
     name = models.CharField(max_length=128, verbose_name='角色名称')
+    last_name = models.
 
-class Permission(models.Model):
+class Permission(models.Model): # 角色拥有的资源类型
     resouce_type = models.IntegerField(choices=RecourseType.choices(), verbose_name='资源类型')
 
 class Menu(models.Model):
