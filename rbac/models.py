@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser
 # todo: 代码调整语句模式 废弃穷举法(url拼接)采用分层过滤具体需要研究下淘宝的实现原理i
 # todo： 将url转换为类名或者model名称   以url为组判断
 # TODO: 在代码级别再次封装request.user
-
+# todo: 引入mongdb存储
 class UserTypeModel(Enum):
     """
     用户模型表
