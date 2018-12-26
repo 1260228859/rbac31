@@ -6,6 +6,7 @@ from django.contrib.auth.models import AbstractUser
 # todo： 将url转换为类名或者model名称   以url为组判断
 # TODO: 在代码级别再次封装request.user
 # todo: 引入mongdb存储
+# todo: 用户表-->用户组(pid)-->菜单表(menu)--->页面关联接口集-->API-->data  
 class UserTypeModel(Enum):
     """
     用户模型表
