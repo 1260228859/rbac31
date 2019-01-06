@@ -33,6 +33,14 @@ class UserGroup2Role(models.Model):
     usergroup_id = models.ForeignKey(UserGroup, to_field='usergroup_id', verbose_name='用户组关联id')
     role_id = models.ForeignKey(Role, to_field='role_id', verbose_name='用户角色关联id')
 
+#
+# class Role2Menu(models.Model):
+#     """
+#     角色菜单关联表
+#     """
+#     role_id = models.ForeignKey(Role, to_field='role_id', verbose_name='关联角色id')
+#     menu_id = models.ForeignKey(Menu, to_field='menu_id', verbose_name='关联菜单id')
+
 
 class Menu2Permission(models.Model):
     """

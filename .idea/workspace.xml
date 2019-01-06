@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5561ed9b-5699-4f35-8485-c14f6f9d7556" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/enums/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/foreignkey_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/icon.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/permission.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/recourse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/role.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/models/usergroup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rbacnew/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rbac31.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rbac31.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/READMIN.md" beforeDir="false" afterPath="$PROJECT_DIR$/READMIN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac31/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac31/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbacnew/models/foreignkey_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbacnew/models/foreignkey_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbacnew/models/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbacnew/models/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbacnew/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbacnew/models/user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,16 +18,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rbacnew/models/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="418">
+              <caret line="93" column="130" selection-start-line="93" selection-start-column="121" selection-end-line="93" selection-end-column="130" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#1048#1323#0" />
                 <element signature="e#1182#1302#0" />
                 <element signature="e#1549#1796#0" />
+                <element signature="e#2019#2086#0" />
               </folding>
             </state>
           </provider>
@@ -57,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rbacnew/models/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="225">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -66,14 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rbacnew/models/permission.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -91,6 +68,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rbacnew/models/recourse.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rbacnew/models/usergroup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -102,20 +84,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rbacnew/models/foreignkey_table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="371">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/virtualenv-project/rbac31/lib/python3.6/site-packages/django/db/models/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-379">
-              <caret line="474" column="10" selection-start-line="474" selection-start-column="10" selection-end-line="474" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -147,10 +120,10 @@
         <option value="$PROJECT_DIR$/rbacnew/models/user_group.py" />
         <option value="$PROJECT_DIR$/rbacnew/models/user_role.py" />
         <option value="$PROJECT_DIR$/rbacnew/models/usergroup.py" />
+        <option value="$PROJECT_DIR$/rbacnew/models/permission.py" />
+        <option value="$PROJECT_DIR$/rbacnew/models/menu.py" />
         <option value="$PROJECT_DIR$/rbacnew/models/foreignkey_table.py" />
         <option value="$PROJECT_DIR$/rbacnew/models/user.py" />
-        <option value="$PROJECT_DIR$/rbacnew/models/menu.py" />
-        <option value="$PROJECT_DIR$/rbacnew/models/permission.py" />
       </list>
     </option>
   </component>
@@ -256,12 +229,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543933655861</updated>
-      <workItem from="1546752964295" duration="8394000" />
+      <workItem from="1546752964295" duration="12773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8394000" />
+    <option name="totallyTimeSpent" value="12773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -280,7 +253,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.25526643" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25526643" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
@@ -304,12 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rbacnew/models/recourse.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbacnew/models/icon.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/rbac31/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -323,9 +290,6 @@
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbacnew/models/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/virtualenv-project/rbac31/lib/python3.6/site-packages/django/core/management/base.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -357,17 +321,19 @@
     <entry file="file://$PROJECT_DIR$/rbacnew/models/user_role.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/virtualenv-project/rbac31/lib/python3.6/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-379">
-          <caret line="474" column="10" selection-start-line="474" selection-start-column="10" selection-end-line="474" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/rbacnew/models/icon.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/rbacnew/models/foreignkey_table.py">
+    <entry file="file://$PROJECT_DIR$/rbacnew/models/api.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbacnew/models/recourse.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbacnew/models/role.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -381,10 +347,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rbacnew/models/role.py">
+    <entry file="file://$USER_HOME$/virtualenv-project/rbac31/lib/python3.6/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="13">
+          <caret line="474" column="10" selection-start-line="474" selection-start-column="10" selection-end-line="474" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbacnew/models/permission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbacnew/models/foreignkey_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -393,8 +373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rbacnew/models/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -403,23 +383,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rbacnew/models/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="418">
+          <caret line="93" column="130" selection-start-line="93" selection-start-column="121" selection-end-line="93" selection-end-column="130" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <element signature="e#1048#1323#0" />
             <element signature="e#1182#1302#0" />
             <element signature="e#1549#1796#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbacnew/models/permission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#2019#2086#0" />
           </folding>
         </state>
       </provider>

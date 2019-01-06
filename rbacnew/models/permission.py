@@ -9,10 +9,10 @@ class PermissionType(Enum):
     """
     权限类型
     """
-    MENU = 1
-    API = 2
-    ICON = 3
-    FILE = 4
+    MENU = 'Menu'
+    API = 'Api'
+    ICON = 'Icon'
+    FILE = 'File'
 
     @classmethod
     def choices(cls):
@@ -29,4 +29,4 @@ class Permission(models.Model):
     权限总表
     """
     permission_id = models.IntegerField(verbose_name='权限id')
-    permission_type = models.IntegerField(choices=PermissionType.choices(), verbose_name='权限类型')
+    permission_type = models.CharField(choices=PermissionType.choices(), max_length=128, verbose_name='权限类型')

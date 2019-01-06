@@ -8,10 +8,12 @@ from rbacnew.models.foreignkey_table import *  # 循环引用问题
 class Menu(models.Model):
     """
     菜单表
+        sort_id 用来做排序
+        取出所有 返回给前端
+
+        1、返回用户配置界面是先进行一次整体查询  在进行现有权限进行查询  最后得出对应表
+        2、扁平化的表如何转变为嵌套格式 # todo: 等待商榷
     """
     name = models.CharField(max_length=128, verbose_name='前端菜单名称')
     menu_id = models.IntegerField(verbose_name='前端菜单id值')
-    menu_num = models.CharField(max_length=128, verbose_name='前端菜单编码')  # 1-1  1-0 2-9-1
-
-
-
+    sort_id = models.CharField(max_length=128, verbose_name='前端菜单排序编码')  # 1-1  1-0 2-9-1

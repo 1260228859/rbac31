@@ -29,7 +29,7 @@ class User(AbstractUser):
         用户 -- 角色 多对多
     """
     user_id = models.IntegerField(verbose_name='用户id')
-    user_model = models.IntegerField(choices=UserTypeModel.choices(), verbose_name='用户类型', default=0)
+    user_model = models.CharField(choices=UserTypeModel.choices(), max_length=128, verbose_name='用户类型', default=0)
 
     def get_user_obj(self):
         try:
@@ -45,15 +45,15 @@ class User(AbstractUser):
         :return:
         """
         # 中间表中获取所有的用户组id列表
-        usergroup_id_list = User2Group.objects.filter(user_id=self.user_id).value_list('usergroup_id')
-        return UserGroup2Role.objects.filter(usergroup_id__in=usergroup_id_list).value_list('role_id')
+        usergroup_id_list = User2Group.objects.filter(user_id_id=self.user_id).value_list('usergroup_id')
+        return UserGroup2Role.objects.filter(usergroup_id_id__in=usergroup_id_list).value_list('role_id')
 
     def get_all_user_role(self):
         """
         获取当前用户所有的角色
         :return:
         """
-        return User2Role.objects.filter(user_id=self.user_id).value_list('role_id')
+        return User2Role.objects.filter(user_id_id=self.user_id).value_list('role_id')
 
     def get_all_role_id_list(self):
         """
@@ -73,10 +73,27 @@ class User(AbstractUser):
         :return:
         """
         pass
-    
+
     def get_all_permissions_mask(self):
         """
         获取所有的权限mask值
         :return:
         """
         pass
+
+    def get_all_recourse(self):
+        """
+        获取当前用户所有的资源   该用户前端拥有的相关资源
+        :return:
+        """
+        # 获取所有的权限列表
+        permission_id_list = Role2Permission.objects.filter(role_id_id__in=self.get_all_role_id_list()).values_list(
+            'permission_id')
+
+        # 获取所有的权限类型分别对应的表名 方便后续进行反射使用  他的权限对应的几个表 这一步可以不必使用
+        # permission_type_list = Permission.objects.filter(permission_id__in=permission_id_list).values(
+        #     'permission_type').annotate()
+
+        menu_id_list = Menu2Permission.objects.filter(permission_id_id__in=permission_id_list).values_list('menu_id')
+
+        return menu_id_list
