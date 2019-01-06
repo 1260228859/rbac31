@@ -26,4 +26,20 @@ class Menu(models.Model):
         """
         menu_all = cls.objects.all().values('name', 'sort_id')
         sorted(menu_all, key=lambda x: x['sort_id'])
+
         return {i['sort_id']: i['name'] for i in menu_all}
+
+    @classmethod
+    def sort_id_change_menu_id(cls, sort_ids):
+        """
+        排序id转换为菜单关联id
+        :param sort_ids:   有可能为单个值 有可能为多个值的集合
+        :return:
+        """
+
+        if isinstance(sort_ids, str):
+            sort_ids = [sort_ids, ]
+        menu_objs = cls.objects.filter(sort_id__in=sort_ids)
+        sort_ids_dict = {obj['sort_id']: obj['menu_id'] for obj in menu_objs}
+
+        return [sort_ids_dict[i] for i in sort_ids]
