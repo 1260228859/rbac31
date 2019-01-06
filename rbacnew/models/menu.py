@@ -17,3 +17,14 @@ class Menu(models.Model):
     name = models.CharField(max_length=128, verbose_name='前端菜单名称')
     menu_id = models.IntegerField(verbose_name='前端菜单id值')
     sort_id = models.CharField(max_length=128, verbose_name='前端菜单排序编码')  # 1-1  1-0 2-9-1
+
+    @classmethod
+    def get_all_sort_menu(cls):
+        """
+        获取所有有序的菜单
+        :return:
+        """
+        menu_all = cls.objects.all().values('name', 'sort_id')
+        sorted(menu_all, key=lambda x: x['sort_id'])
+        return [{i['sort_id']:i['name']} for i in menu_all]
+
