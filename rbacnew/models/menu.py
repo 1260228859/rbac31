@@ -26,5 +26,4 @@ class Menu(models.Model):
         """
         menu_all = cls.objects.all().values('name', 'sort_id')
         sorted(menu_all, key=lambda x: x['sort_id'])
-        return [{i['sort_id']:i['name']} for i in menu_all]
-
+        return {i['sort_id']: i['name'] for i in menu_all}

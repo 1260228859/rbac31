@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
-# Create your views here.
-
+from rbacnew.models.menu import Menu
+from rbacnew.models.foreignkey_table import *
 
 class MenuPermissionView(View):
 
@@ -15,4 +15,5 @@ class MenuPermissionView(View):
         """
 
         # 获取前端菜单所有的数据
+        return Menu.get_all_sort_menu()
 
